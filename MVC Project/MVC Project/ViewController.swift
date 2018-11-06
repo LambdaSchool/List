@@ -20,10 +20,18 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func debug(_ sender: Any) {
+        let text = label.text ?? ""
+        if !text.isEmpty {
+            print(label.text!)
+            
+        }
+        }
+    }
     
     
     
     
     
-}
+
 

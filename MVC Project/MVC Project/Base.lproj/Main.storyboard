@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fk5-Dj-xnQ">
-                                <rect key="frame" x="8" y="28" width="359" height="631"/>
+                                <rect key="frame" x="8" y="28" width="359" height="587"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6wr-Ab-H4S">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="30"/>
@@ -38,17 +38,23 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oML-eG-1TU">
-                                        <rect key="frame" x="0.0" y="38" width="359" height="555"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oML-eG-1TU">
+                                        <rect key="frame" x="0.0" y="38" width="359" height="473"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbC-56-pfk">
-                                        <rect key="frame" x="0.0" y="601" width="359" height="30"/>
+                                        <rect key="frame" x="0.0" y="519" width="359" height="30"/>
+                                        <state key="normal" title="Debug"/>
+                                        <connections>
+                                            <action selector="debug:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aEr-oy-8Yv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLY-DS-ARq">
+                                        <rect key="frame" x="0.0" y="557" width="359" height="30"/>
                                         <state key="normal" title="Reset"/>
                                         <connections>
-                                            <action selector="shouldReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xYO-MY-N95"/>
+                                            <action selector="shouldReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPA-4h-RbI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -63,6 +69,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="label" destination="oML-eG-1TU" id="nQt-FZ-EMK"/>
                         <outlet property="textField" destination="oNy-7f-Vh8" id="nAo-LH-ACf"/>

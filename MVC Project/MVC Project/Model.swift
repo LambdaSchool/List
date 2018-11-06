@@ -7,7 +7,7 @@ class Model {
     private(set) var items: [String] = []
     
     func addItems(_ item: String) -> [String] {
-        items += [item]
+        items += ["•" + item]
         return items
     }
     func  resetItems() -> [String]{
