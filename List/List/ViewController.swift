@@ -10,8 +10,8 @@ class ViewController: UIViewController {
         Model.shared.add(text)
         textField.text = ""
         
-        let joined = Model.shared.items.joined(separator: "\n")
-        label.text = joined
+        let joined = Model.shared.items.joined(separator: "\n\u{2022} ")
+        label.text = "\n\u{2022} " + joined
     }
     @IBAction func shouldReset(_ sender: Any) {
         Model.shared.resetItems()
@@ -19,6 +19,12 @@ class ViewController: UIViewController {
         label.text = joined
     }
     
+    @IBAction func shouldPrint(_ sender: Any) {
+    
+        let joined = Model.shared.items.joined(separator: "\n\u{2022} ")
+        print("\u{2022} " + joined)
+        
+    }
     
 }
 
