@@ -79,6 +79,7 @@
                     </view>
                     <connections>
                         <outlet property="list" destination="r26-mJ-m1E" id="Ezw-zU-QpW"/>
+                        <outlet property="printToConsoleButton" destination="ujO-AA-vyE" id="yKf-NM-Ryv"/>
                         <outlet property="textField" destination="RDR-1T-RAC" id="bC6-jQ-mPA"/>
                     </connections>
                 </viewController>
