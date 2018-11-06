@@ -9,7 +9,7 @@ class ViewController: UIViewController {
     @IBAction func shouldAdd(_ sender: UIButton) {
         let text = textField.text ?? ""
         if !text.isEmpty {
-            Model.shared.add(text)
+            Model.shared.add("\u{2022} \(text)")
             textField.text = ""
             let joined = Model.shared.items.joined(separator: "\n")
             label.text = joined
