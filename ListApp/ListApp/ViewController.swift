@@ -3,23 +3,28 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
-    
     @IBOutlet weak var label: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateViews()
+    }
  
     @IBAction func shouldAdd(_ sender: Any) {
-        if let text = textField.text, !text.isEmpty {
-            let entry = Model()
-            Model.shared.items.append()
+        guard let text = textField.text,
+            !text.isEmpty else { return }
+        
+        Model.shared.add(text)
+        updateViews()
     }
-    
-    !text.isEmpty
     
     @IBAction func shouldReset(_ sender: Any) {
-        resetItems()
-        
-        label.text = ""
+        Model.shared.resetItems()
+        updateViews()
     }
     
-    let joined = Model.shared.items.joined(separator: "\n")
+    private func updateViews() {
+        let joined = Model.shared.items.joined(separator: "\n")
+        label.text = joined
     }
 }
