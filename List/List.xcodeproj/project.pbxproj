@@ -12,6 +12,7 @@
 		ABA51519219238AC004FD8DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA51517219238AC004FD8DC /* Main.storyboard */; };
 		ABA5151B219238AD004FD8DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA5151A219238AD004FD8DC /* Assets.xcassets */; };
 		ABA5151E219238AD004FD8DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA5151C219238AD004FD8DC /* LaunchScreen.storyboard */; };
+		ABA5152621923A1B004FD8DC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA5152521923A1B004FD8DC /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		ABA5151A219238AD004FD8DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABA5151D219238AD004FD8DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABA5151F219238AD004FD8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABA5152521923A1B004FD8DC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				ABA51513219238AC004FD8DC /* AppDelegate.swift */,
 				ABA51515219238AC004FD8DC /* ViewController.swift */,
+				ABA5152521923A1B004FD8DC /* Model.swift */,
 				ABA51517219238AC004FD8DC /* Main.storyboard */,
 				ABA5151A219238AD004FD8DC /* Assets.xcassets */,
 				ABA5151C219238AD004FD8DC /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA5152621923A1B004FD8DC /* Model.swift in Sources */,
 				ABA51516219238AC004FD8DC /* ViewController.swift in Sources */,
 				ABA51514219238AC004FD8DC /* AppDelegate.swift in Sources */,
 			);
