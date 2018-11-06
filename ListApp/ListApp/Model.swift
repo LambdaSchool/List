@@ -13,5 +13,5 @@ func add(_ item: String) {
 }
 
 func resetItems() {
-    // reset items list
+   // remove.Model.shared.items[index]
 }
