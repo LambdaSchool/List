@@ -10,7 +10,7 @@ class Model {
         items.append(item)
     }
     func resetItems() {
-        items = [""]
+        items.removeAll()
         // reset your items list here
     }
 }
