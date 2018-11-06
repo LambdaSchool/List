@@ -8,6 +8,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     
+    
     @IBAction func shouldAdd(_ sender: UIButton) {
         let text = textField.text ?? ""
         if !text.isEmpty {
@@ -23,5 +24,12 @@ class ViewController: UIViewController {
         Model.shared.resetItems()
         textView.text = ""
     }
+    
+    
+    @IBAction func shouldDebug(_ sender: UIButton) {
+        let debugList = Model.shared.items.joined(separator: "\n")
+        print(debugList)
+    }
+    
 }
 
