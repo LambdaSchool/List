@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 class Model {
@@ -12,7 +11,13 @@ class Model {
     }
     
     func resetItems() {
-        items.removeAll()
+        items = []
+    }
+    
 }
 
-}
+print(Model.shared.items)
+
+Model.shared.add("Yo")
+
+print(Model.shared.items)
