@@ -1,0 +1,19 @@
+What is Interface Builder's object library?
+-where pre-made items are accessible to implement on storyboard UIViews
+
+
+What is the difference between an outlet and an action?
+-Outlets are used to show information, actions are to run code when a button is pressed
+
+
+
+What is the role of a View Controller?
+View Controller is what the user sees and interacts with.  
+
+
+What is Model-View-Controller?
+Controls the View Controller and tells it what to display when.
+
+
+Why use Model-View-Controller?
+It is easy to review, by oneself, or other programmers and its visual.
