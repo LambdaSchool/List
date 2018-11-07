@@ -1,4 +1,9 @@
-View Controllers and the Model-View-Controller Question
+View Controllers and the Model-View-Controller Challenge Questions
+Sameera L Roussi
+11-6-2018
+
+Why should the text field be cleared?
+Without clearing the field new items entered into the text field are appended to the current value in the text field. Clearing the textField text is cleared to eliminate the necessity of clearing it before added a new item.  Clearing the text field is also more user friendly and insure the data that will be saved to the model is as intended. 
 
 What is Interface Builder's object library?
 The Interface Builder’s object library is a workspace window in Xcode.  This workspace window lists the objects that can be used to create a user interface on s storyboard.
