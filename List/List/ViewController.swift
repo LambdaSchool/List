@@ -33,6 +33,9 @@ class ViewController: UIViewController {
         label.text = ""
     }
     
+    @IBAction func printList(_ sender: Any) {
+        print(Model.shared.items.joined(separator: "\n"))
+    }
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var label: UILabel!
