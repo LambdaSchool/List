@@ -14,21 +14,14 @@ class ViewController: UIViewController {
         
         let text = textField.text ?? ""
         if !text.isEmpty {
-           Model.shared.add(text)
-        }
-        textField.text = ""
-        
-        for _ in Model.shared.items {
-            
-              let joined = Model.shared.items.joined(separator: "\n")
+            Model.shared.add(text)
+            textField.text = ""
+            let joined = Model.shared.items.joined(separator: "\n")
             label.text = joined
         }
     }
-    
     @IBAction func shouldReset(_ sender: UIButton) {
         Model.shared.resetItems()
          label.text = ""
     }
-    
-    
 }
