@@ -39,16 +39,23 @@
                                         </subviews>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkU-zU-SdN">
-                                        <rect key="frame" x="0.0" y="38" width="359" height="555"/>
+                                        <rect key="frame" x="0.0" y="38" width="359" height="517"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic0-Jm-Aug">
-                                        <rect key="frame" x="0.0" y="601" width="359" height="30"/>
+                                        <rect key="frame" x="0.0" y="563" width="359" height="30"/>
                                         <state key="normal" title="Reset"/>
                                         <connections>
                                             <action selector="shouldReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TAv-Vl-awf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nep-Da-xyY">
+                                        <rect key="frame" x="0.0" y="601" width="359" height="30"/>
+                                        <state key="normal" title="Print list to debug console"/>
+                                        <connections>
+                                            <action selector="printList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="miI-Pd-D68"/>
                                         </connections>
                                     </button>
                                 </subviews>

@@ -18,9 +18,13 @@ class ViewController: UIViewController {
         }
     }
     
-    
     @IBAction func shouldReset(_ sender: Any) {
         Model.shared.resetItems()
         textView.text = ""
     }
+    
+    @IBAction func printList(_ sender: Any) {
+        print(Model.shared.items.joined(separator: "\n"))
+    }
+    
 }
