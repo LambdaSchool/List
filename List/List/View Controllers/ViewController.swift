@@ -2,11 +2,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        updateViews()
-    }
-    
     private func updateViews() {
         let joined = Model.shared.items.joined(separator: "\n")
         listTextView.text = joined
@@ -19,7 +14,7 @@ class ViewController: UIViewController {
         let text = itemTextField.text ?? ""
         
         if !text.isEmpty {
-            Model.shared.create(text)
+            Model.shared.create("• \(text)")
         }
         itemTextField.text = ""
         updateViews()
