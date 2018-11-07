@@ -33,8 +33,7 @@
                                                 <rect key="frame" x="329" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="Add"/>
                                                 <connections>
-                                                    <action selector="btnaddNewItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sS2-BY-X8O"/>
-                                                    <action selector="shouldAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kUZ-uR-qpX"/>
+                                                    <action selector="shouldAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ah9-9y-ztc"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -49,8 +48,7 @@
                                         <rect key="frame" x="0.0" y="601" width="359" height="30"/>
                                         <state key="normal" title="Reset"/>
                                         <connections>
-                                            <action selector="btnReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pHY-Ly-OEM"/>
-                                            <action selector="shouldReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DZi-ZR-anh"/>
+                                            <action selector="shouldReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TAv-Vl-awf"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -66,10 +64,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="itemsList" destination="WC3-dr-aqF" id="bx4-qk-YqB"/>
-                        <outlet property="label" destination="WC3-dr-aqF" id="oTw-c1-j7v"/>
-                        <outlet property="newItem" destination="TSa-Sq-D16" id="r6A-7s-8xG"/>
-                        <outlet property="textField" destination="TSa-Sq-D16" id="Qb2-rw-HuA"/>
+                        <outlet property="label" destination="WC3-dr-aqF" id="29i-mY-2ap"/>
+                        <outlet property="textField" destination="TSa-Sq-D16" id="D7B-uX-2DQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
