@@ -6,7 +6,8 @@ class Model {
     
     func add(_ item: String) {
         // add the item to your items list
-        items.append(item)
+        let bulletPoint: String = "\u{2022}"
+        items.append(bulletPoint + " " + item)
         print(items)
     }
     
