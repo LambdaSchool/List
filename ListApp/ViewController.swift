@@ -11,16 +11,8 @@ class ViewController: UIViewController {
     }
  
     @IBAction func shouldAdd(_ sender: Any) {
-        guard let text = textField.text else { return }
-        
-        
-        
-        
-        
-        
-        
- //      guard let text = textField.text,
-  //          !text.isEmpty else { return }
+        guard let text = textField.text,
+            !text.isEmpty else { return }
         
         Model.shared.add(text)
         updateViews()
