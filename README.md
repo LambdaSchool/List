@@ -1,5 +1,5 @@
 # Module Challenge: View Controllers and the Model-View-Controller Design Pattern - List
-
+.
 This challenge allows you to practice the concepts and techniques learned in today's guided lesson and apply them in a concrete project. Your lesson explored the view controller, IB's object library, and Model-View-Controller. You will demonstrate proficiency by creating an application that showcases the same features you learned in class.
 
 ## Instructions
