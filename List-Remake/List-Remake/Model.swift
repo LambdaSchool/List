@@ -7,10 +7,11 @@ class Model {
     private(set) var items: [String] = []
     
     func add(_ item: String) {
-     //   item.append(text)
+        items.append(item)
     }
     
     func resetItems() {
         // reset list here
+        items.removeAll()
     }
 }
