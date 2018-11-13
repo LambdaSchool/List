@@ -26,6 +26,12 @@ class ViewController: UIViewController {
      let joined = Model.shared.items.joined(separator: "\n")
     label.text = joined
     }
+    
+    @IBAction func shouldPrint(_ sender: Any) {
+        print(Model.shared.items)
+    }
+    
+    
 }
 
 
