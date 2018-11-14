@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         
         if !text.isEmpty { // if text is not empty...
             // add text to the model
-            Model.shared.add(text)
+            Model.shared.add("• \(text)")
             
             // remove the text from the textField after it has been added to the label
             textField.text = ""
