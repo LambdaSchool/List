@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var textView: UITextView!
     
+    @IBOutlet weak var textView: UITextView!
     
     @IBAction func shouldAdd(_ sender: UITextField) {
         let text = textField.text ?? ""
