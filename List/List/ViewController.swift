@@ -11,22 +11,29 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textView: UITextView!
     
-    @IBOutlet weak var label: UILabel!
     
-    
-    @IBAction func shouldAdd(_ sender: Any) {
-        guard let text = textField.text, !text.isEmpty else { return }
-            Model.shared.addItem(item: text)
-            self.textField.text = ""
-     }
-    
-    @IBAction func shouldReset(_ sender: Any) {
-        Model.shared.resetItems()
+    @IBAction func shouldAdd(_ sender: UITextField) {
+        let text = textField.text ?? ""
+        if !text.isEmpty {
+        Model.shared.addItem(item: text)
         textField.text = ""
+    }
+        let joined = Model.shared.items.joined(separator: "\n")
+        textView.text = joined
+    }
+    
+    @IBAction func shouldReset(_ sender: UIButton) {
+        Model.shared.resetItems()
+        textView.text = ""
     
     }
     
+    
+
 }
+    
+
 
 
