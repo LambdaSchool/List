@@ -40,11 +40,18 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQU-cZ-jUg">
-                                        <rect key="frame" x="0.0" y="38" width="335" height="531"/>
+                                        <rect key="frame" x="0.0" y="38" width="335" height="493"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGz-rO-KfG">
+                                        <rect key="frame" x="0.0" y="539" width="335" height="30"/>
+                                        <state key="normal" title="Print To Console"/>
+                                        <connections>
+                                            <action selector="shouldPrintToConsole:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uXp-r9-eE5"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sav-a8-Lyn">
                                         <rect key="frame" x="0.0" y="577" width="335" height="30"/>
                                         <state key="normal" title="Reset"/>
