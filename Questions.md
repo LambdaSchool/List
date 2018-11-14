@@ -1,0 +1,22 @@
+## View Controller Containment and UITabBarController
+
+**What is Interface Builder's object library?**
+The Interface Builder’s object library is a workspace window in Xcode.  This workspace window lists the objects that can be used to create a user interface on s storyboard.
+
+**What is the difference between an outlet and an action?**
+An outlet is a reference to an object that has been placed onto a storyboard scene.  Adding the outlet to the storyboard source code provides programatic access and manipulation of the object.
+
+An action allows insertion of code that is sourced in items in Interface Builder( detects and manipulates behaviors)
+
+**What is the role of a View Controller?**
+What is a Controller = conduit between views and models
+
+**What is Model-View-Controller?**
+Model-View-Controller is an  architectural design patterns.
+
+**Why use Model-View-Controller?**
+MVC structures our code in a way that promotes easy scalability and reusability.
+
+**Why should the text field be cleared?**
+Without clearing the field new items entered into the text field are appended to the current value in the text field. Clearing the textField text is cleared to eliminate the necessity of clearing it before added a new item.  Clearing the text field is also more user friendly and insure the data that will be saved to the model is as intended. 
+
