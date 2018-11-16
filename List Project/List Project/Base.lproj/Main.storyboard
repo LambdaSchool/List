@@ -33,6 +33,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSz-2C-wod">
                                                 <rect key="frame" x="329" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="Add"/>
+                                                <connections>
+                                                    <action selector="shouldAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iVe-0j-aOl"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -48,6 +51,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7P-3d-t5F">
                                                 <rect key="frame" x="0.0" y="563" width="359" height="30"/>
                                                 <state key="normal" title="Reset"/>
+                                                <connections>
+                                                    <action selector="shouldReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bZ-o7-dVC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -63,6 +69,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="ZVN-aL-FeK" id="20u-JI-Lkl"/>
+                        <outlet property="textField" destination="f2n-Nc-Wr4" id="Dqf-b7-2p2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
