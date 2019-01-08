@@ -9,8 +9,17 @@
 import Foundation
 
 class ItemsController {
-    var items: [String] = []
-   
+    var items = [String]()
+    
+    func add(_ item: String) {
+        // add the item to your items list
+       items.append(item)
+        
+    }
+    
+    func resetItems() {
+        items.removeAll()
+    }
     
    
 }

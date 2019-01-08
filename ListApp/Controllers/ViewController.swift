@@ -22,46 +22,33 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateViews()
+        
+    }
+    
+    func updateViews(){
         label.text = nil
-        
     }
     
-    
-    
-    func add(_ item: String) {
-        // add the item to your items list
-       itemsController.items.append(bullets + " " + item)
-       
-  
-       let joined = itemsController.items.joined(separator: "\n")
-        
-        
-        
-        label.text = joined
-    
-    }
-    
-    func resetItems() {
-        // reset your items list here
-        label.text = ""
-    } 
 
     @IBAction func shouldAdd(_ sender: UIButton) {
         
         let text = textField.text ?? ""
        
         if !text.isEmpty {
-            add(text)
+            itemsController.add(text)
             textField.text = ""
         } else {
             print("No")
         }
+        let joined = itemsController.items.joined(separator: "\n")
+        label.text = joined
         
     }
     
     @IBAction func shouldReset(_ sender: UIButton) {
-        resetItems()
-        
+        itemsController.resetItems()
+        updateViews()
     }
     
     @IBAction func printButton(_ sender: UIButton) {
