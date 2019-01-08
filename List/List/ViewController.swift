@@ -2,9 +2,9 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var textField: UITextField!
-    @IBOutlet var label: UILabel!
+    @IBOutlet var textView: UITextView!
     
-    let updatedLabel = Model.shared.items.joined(separator: "\n")
+    let updatedTextView = Model.shared.items.joined(separator: "\n")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,17 +16,17 @@ class ViewController: UIViewController {
         guard !text.isEmpty else { return }
         Model.shared.add("∙ \(text)")
         textField.text = ""
-        let updatedLabel = Model.shared.items.joined(separator: "\n")
-        label.text = updatedLabel
+        let updatedTextView = Model.shared.items.joined(separator: "\n")
+        textView.text = updatedTextView
     }
     
     @IBAction func shouldReset(_ sender: Any) {
         Model.shared.resetItems()
-        label.text = ""
+        textView.text = ""
     }
     
     @IBAction func printList(_ sender: Any) {
-        print(Model.shared.items)
+        print(updatedTextView)
     }
     
 
