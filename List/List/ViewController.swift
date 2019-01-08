@@ -12,8 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        label.backgroundColor = UIColor(patternImage: UIImage(named: "ocean")!)
     }
+    
     
     func moveListForward() {
         label.text = completeList
@@ -78,8 +79,9 @@ class ViewController: UIViewController {
         listCount = 1
     }
     
-    
-    
+    @IBAction func printDebug(_ sender: UIButton) {
+        print(completeList)
+    }
     
 
 }
