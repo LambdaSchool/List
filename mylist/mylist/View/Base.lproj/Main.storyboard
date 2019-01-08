@@ -27,38 +27,48 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wj1-Nt-1Tn">
                                 <rect key="frame" x="321" y="20" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2WE-IT-5ku"/>
+                                </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ih8-9M-56j">
-                                <rect key="frame" x="16" y="207" width="343" height="225"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8G-Vr-iYj">
                                 <rect key="frame" x="138" y="617" width="89" height="30"/>
                                 <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ckn-cX-Sh4"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXb-YE-MWL">
+                                <rect key="frame" x="16" y="172" width="343" height="277"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="277" id="YW2-HO-fqG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="vXb-YE-MWL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="172" id="59N-9q-IMm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aaD-0G-Wk7" secondAttribute="bottom" constant="617" id="8XM-oU-leZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wj1-Nt-1Tn" secondAttribute="trailing" constant="24" id="8aS-yL-xhm"/>
                             <constraint firstItem="aaD-0G-Wk7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E9F-xP-4Uk"/>
                             <constraint firstItem="Wj1-Nt-1Tn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FyV-Cf-gd1"/>
                             <constraint firstItem="G8G-Vr-iYj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="GtZ-as-JyM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G8G-Vr-iYj" secondAttribute="bottom" constant="20" id="MkX-hV-h9V"/>
-                            <constraint firstItem="G8G-Vr-iYj" firstAttribute="top" secondItem="Ih8-9M-56j" secondAttribute="bottom" constant="185" id="ZQH-MC-Lg8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G8G-Vr-iYj" secondAttribute="trailing" constant="148" id="aJF-uH-nRl"/>
-                            <constraint firstItem="Ih8-9M-56j" firstAttribute="top" secondItem="aaD-0G-Wk7" secondAttribute="bottom" constant="157" id="btn-As-tRG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ih8-9M-56j" secondAttribute="bottom" constant="235" id="hVT-TX-ywp"/>
+                            <constraint firstItem="vXb-YE-MWL" firstAttribute="leading" secondItem="aaD-0G-Wk7" secondAttribute="leading" id="bmF-PH-Gbt"/>
                             <constraint firstItem="Wj1-Nt-1Tn" firstAttribute="leading" secondItem="aaD-0G-Wk7" secondAttribute="trailing" constant="18" id="lB5-LX-7Ra"/>
                             <constraint firstItem="aaD-0G-Wk7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mRB-Op-mRf"/>
-                            <constraint firstItem="Ih8-9M-56j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uQa-QS-wc6"/>
+                            <constraint firstItem="vXb-YE-MWL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tzN-mQ-SW5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aaD-0G-Wk7" secondAttribute="trailing" constant="72" id="uht-rm-cGj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ih8-9M-56j" secondAttribute="trailing" constant="16" id="yHb-bs-Lcy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="itemTextField" destination="aaD-0G-Wk7" id="CHm-Ek-REh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
