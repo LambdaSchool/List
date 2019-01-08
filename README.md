@@ -76,7 +76,7 @@ Follow these steps in IB to lay out your interface
 
 - Drag a button and a text field into interface builder, with the button to the right. Embed these items into a stack view. 
 - Use the attributes inspector to set the stack view spacing to 8.
-- Drag in a label and another button. Make a vertical stack including your first label/button stack, then the label, then the other button.
+- Drag in a label and another button. Make a vertical stack including your text field/button stack, then the label, then the other button.
 - Use the attributes inspector to set the stack view spacing to 8 and the alignment to Fill.
 - With the stack view still selected, use the Tie Fighter to set offsets to 8 above, to the left, to the right, and below. Add all four constraints.
 - Select the label from the document overview. In the attributes inspector, set the number of lines from 1 to 0.
