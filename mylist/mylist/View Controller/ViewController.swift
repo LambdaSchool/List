@@ -13,21 +13,31 @@ class ViewController: UIViewController {
     var itemController = ItemController()
 
     @IBOutlet weak var itemTextField: UITextField!
-    @IBOutlet weak var listTextView: UITextView!
+    @IBOutlet weak var itemLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        listTextView.text = nil
+        itemLabel.text = nil
     }
 
     @IBAction func addItem(_ sender: UIButton) {
         guard let text = itemTextField.text, !text.isEmpty else { return }
-        itemController.items.insert(text, at: 0)
+        itemController.add("* \(text)")
         
-        listTextView.text = itemController.items.first
+        let joined = itemController.items.joined(separator: "\n")
+        itemLabel.text = "\(joined)"
+        
+        itemTextField.text = nil
     }
     
     @IBAction func resetList(_ sender: UIButton) {
+        itemController.resetItems()
+        itemLabel.text = nil
+        itemTextField.text = nil
+    }
+    
+    @IBAction func shouldPrint(_ sender: UIButton) {
+        print("\(itemController.items)")
     }
     
 }
