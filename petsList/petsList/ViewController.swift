@@ -15,14 +15,32 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var shouldAdd: UIButton!
-    let text = textField.text ?? ""
+  
     @IBOutlet weak var shouldReset: UIButton!
+    
+    let itemsController = ItemsController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    @IBAction func addButtonTapped(_ sender: UIButton) {
+        let text = textField.text ?? ""
+        if !text.isEmpty {
+            itemsController.add(text)
+            
+        }
+        let joined = itemsController.items.joined(separator: "\n")
+        label.text = joined
+    }
+    
+    
+    @IBAction func resetButtonTapped(_ sender: Any) {
+        itemsController.resetItems()
+        label.text = ""
+    }
 }
+
 
 

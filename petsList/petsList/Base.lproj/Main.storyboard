@@ -33,6 +33,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b98-Il-1ZI">
                                                 <rect key="frame" x="329" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="Add"/>
+                                                <connections>
+                                                    <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w4R-L8-hWW"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -45,6 +48,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zS1-lI-60p">
                                         <rect key="frame" x="0.0" y="601" width="359" height="30"/>
                                         <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cKO-xc-8QU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
