@@ -60,6 +60,10 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func printButton(_ sender: UIButton) {
+        
+        print(itemsController.items)
+    }
     
 }
 
