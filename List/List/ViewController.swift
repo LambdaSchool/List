@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         let input = textField.text ?? ""
         
         if !input.isEmpty {
-            completeList += "\(input)\n"
+            completeList += "⭕ - \(input)\n"
             label.text = completeList
             textField.text = ""
         }
