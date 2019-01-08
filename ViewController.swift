@@ -17,9 +17,10 @@ class ViewController: UIViewController {
 
     }
     @IBAction func shouldAdd(_ sender: Any) {
+        let bulletPoint: String = "\u{2022}"
         let text = textField.text ?? ""
         if !text.isEmpty {
-            Model.shared.add(text)
+            Model.shared.add("\(bulletPoint)" + " " + text)
             textField.text = ""
             let joined = Model.shared.items.joined(separator: "\n")
             label.text = joined
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func shouldPrint(_ sender: Any) {
-        print(Model.shared.items.joined(separator: ", "))
+        print(Model.shared.items.joined(separator: " "))
     }
 }
 
