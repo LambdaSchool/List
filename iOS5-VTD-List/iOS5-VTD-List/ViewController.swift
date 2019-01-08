@@ -37,6 +37,10 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func shouldPrintToConsole(_ sender: UIButton) {
+        print(Model.shared.items)
+        
+    }
     
     
 }

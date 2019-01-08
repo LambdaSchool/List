@@ -40,16 +40,23 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2w-ov-k0b">
-                                        <rect key="frame" x="0.0" y="38" width="359" height="555"/>
+                                        <rect key="frame" x="0.0" y="38" width="359" height="517"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtY-F1-BH2">
-                                        <rect key="frame" x="0.0" y="601" width="359" height="30"/>
+                                        <rect key="frame" x="0.0" y="563" width="359" height="30"/>
                                         <state key="normal" title="Reset"/>
                                         <connections>
                                             <action selector="shouldReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bx2-xK-FRU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nV-sY-qSE">
+                                        <rect key="frame" x="0.0" y="601" width="359" height="30"/>
+                                        <state key="normal" title="Print to Console"/>
+                                        <connections>
+                                            <action selector="shouldPrintToConsole:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tax-FG-8Nk"/>
                                         </connections>
                                     </button>
                                 </subviews>
