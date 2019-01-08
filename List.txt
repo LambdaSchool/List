@@ -1,0 +1,19 @@
+∙ What is Interface Builder's object library?
+
+Interface Builder's object library is a library that contains all the elements used in creating the user interface for iOS apps, from table view controllers to buttons, labels, etc.
+
+∙ What is the difference between an outlet and an action?
+
+An outlet is a reference to an object in a storyboard from a source code file. An action is a piece of code that’s linked to an event that can occur in your app.
+
+∙ What is the role of a View Controller?
+
+The view controller manages a set of views and coordinates the flow of information between the app's data model and the views that display that data.
+
+∙ What is Model-View-Controller?
+
+A pattern of app design in which view controllers serve as the communication pipeline between views and the data model.
+
+∙ Why use Model-View-Controller?
+
+It is Apple's recommended architectural pattern and many of the Apple frameworks use MVC.
