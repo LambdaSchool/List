@@ -4,6 +4,8 @@ class ViewController: UIViewController {
     @IBOutlet var textField: UITextField!
     @IBOutlet var label: UILabel!
     
+    let updatedLabel = Model.shared.items.joined(separator: "\n")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +23,10 @@ class ViewController: UIViewController {
     @IBAction func shouldReset(_ sender: Any) {
         Model.shared.resetItems()
         label.text = ""
+    }
+    
+    @IBAction func printList(_ sender: Any) {
+        print(Model.shared.items)
     }
     
 
