@@ -1,0 +1,17 @@
+Vijay-Day2Module-Questions.txt
+
+Question and response:
+1. What is Interface Builder's object library?
+The object library is a collection of pre-built interface objects used to create the user interface.  These objects come with methods as well to manage them. 
+
+2. What is the difference between an outlet and an action?
+An OUTLET gives the developer a local variable that references an interface element to access that elements methods.
+
+3. What is the role of a View Controller?
+The job of the View Controller is to manage interface objects (that can also be considered sub-views) and also to coordinate interaction from the user interface to data model as well as other controllers.
+
+4. What is Model-View-Controller?
+Model-View-Controller is a design pattern used in software development. The pattern calls for separating the user interface (the View) from the data being manipulated (the Model) and using an intermediary called the Controlller to manage this interaction between the View and the Model.
+
+5. Why use Model-View-Controller?
+Developers use this deaign pattern for all the same reasons they employ any pattern. That is to produce reusable, strong, and resilient code. These qualities arise because the behavior or state is separated from the presentation.
