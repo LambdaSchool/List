@@ -1,0 +1,14 @@
+
+Lambda Questions:
+1)    What is Interface Builder's object library?
+a)    IB is a library within the main.storyboard where you can find UIViews to place on viewControllers.
+2)    What is the difference between an outlet and an action?
+a)    An outlet is a connection between a view and code. You would use an IBOutlet whenever you wanted to manipulate or enhance a view on the viewcontroller or when you want the users’ input.
+b)    An IBAction is a connection between a view and code. You would use this whenever you want to execute some logic. This is most often use when a user taps a button.
+3)    What is the role of a View Controller?
+a)    The role of a view controller is to isolate code that is used to specifically update the displays of the views.
+4)    What is Model-View-Controller?
+a)    MVC is a guidline for architecture patterns in iOS programming. The concept is to separate the model from the view while using a model controller as an intermediary. The model holds the data and the view displays the model’s data within the views. The controller acts as a messenger notifying them whenever ther has been a change to the view or a change with the data.
+5)    Why use Model-View-Controller?
+a)    MVC is an iOS architecture that makes debugging easier.
+
