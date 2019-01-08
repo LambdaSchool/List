@@ -20,12 +20,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     @IBAction func shouldAdd(_ sender: Any) {
-        
+        guard let text = textField?.text, !text.isEmpty else { return }
+        itemsController.add(text)
+        updateViews()
     }
     
     @IBAction func shouldReset(_ sender: Any) {
-        
+        itemsController.resetItems()
+        updateViews()
     }
     
+    func updateViews() {
+        label.text = itemsController.items.joined(separator: "\n")
+    }
+    
+    let itemsController = ItemsController()
 }
 
