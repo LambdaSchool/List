@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     
     func resetItems() {
         label.text = ""
+        itemsController.items.removeAll()
     }
     
     @IBAction func shouldAdd(_ sender: UIButton) {
@@ -35,6 +36,10 @@ class ViewController: UIViewController {
     
     @IBAction func shouldReset(_ sender: UIButton) {
         resetItems()
+    }
+    
+    @IBAction func shouldPrintList(_ sender: UIButton) {
+        print(itemsController.items.joined(separator: "\n"))
     }
     
     let itemsController = ItemsController()
