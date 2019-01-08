@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBAction func shouldAdd(_ sender: UIButton) {
         let text = textfield.text ?? ""
         if !text.isEmpty {
-            Model.shared.addItem(text)
+            Model.shared.addItem(" * \(text)")
             textfield.text = ""
             }
         let joined = Model.shared.items.joined(separator: "\n")
