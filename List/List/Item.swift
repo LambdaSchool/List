@@ -9,7 +9,17 @@
 import Foundation
 
 struct Item {
+
     var name: String
+    
+    func add(_ item: String) {
+        // add the item to your items list
+    }
+    
+    func resetItems() {
+        // reset your items list here
+    }
+    
 }
 
 
