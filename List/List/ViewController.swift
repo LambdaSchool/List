@@ -18,18 +18,18 @@ class ViewController: UIViewController {
     func add(_ item: String) {
         itemsController.items.append(item)
         let joined = itemsController.items.joined(separator: "\n")
-        label.text = joined
+        textView.text = joined
     }
     
     func resetItems() {
-        label.text = ""
+        textView.text = ""
         itemsController.items.removeAll()
     }
     
     @IBAction func shouldAdd(_ sender: UIButton) {
         let text = textField.text ?? ""
         if !text.isEmpty {
-            add(text)
+            add("\u{2022} \(text)")
         }
         textField.text = ""
     }
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     let itemsController = ItemsController()
     
     @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var textView: UITextView!
     
 }
 

@@ -42,12 +42,12 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2m-sA-plt">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NE7-FW-Dsg">
                                         <rect key="frame" x="0.0" y="38" width="359" height="555"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EY6-MP-tvp">
                                         <rect key="frame" x="0.0" y="601" width="359" height="30"/>
                                         <subviews>
@@ -83,8 +83,8 @@
                         <viewLayoutGuide key="safeArea" id="Bwq-KU-7g3"/>
                     </view>
                     <connections>
-                        <outlet property="label" destination="G2m-sA-plt" id="X9J-Hc-3t2"/>
                         <outlet property="textField" destination="rh3-Ze-K9l" id="m8v-bU-yZy"/>
+                        <outlet property="textView" destination="NE7-FW-Dsg" id="dXL-fB-fSd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBH-gj-6qW" userLabel="First Responder" sceneMemberID="firstResponder"/>
