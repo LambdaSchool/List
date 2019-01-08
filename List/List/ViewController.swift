@@ -15,9 +15,15 @@ class ViewController: UIViewController {
         
     }
     
+    func moveListForward() {
+        label.text = completeList
+        textField.text = ""
+        listCount += 1
+    }
+    
     let itemsController = ItemsController()
     var completeList: String = ""
-    var listCount: Int = 0
+    var listCount: Int = 1
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var label: UILabel!
@@ -25,10 +31,43 @@ class ViewController: UIViewController {
     @IBAction func shouldAdd(_ sender: UIButton) {
         let input = textField.text ?? ""
         
+        
         if !input.isEmpty {
-            completeList += "⭕ - \(input)\n"
-            label.text = completeList
-            textField.text = ""
+            switch listCount {
+            case 1:
+                completeList += "1️⃣ - \(input)\n"
+                moveListForward()
+            case 2:
+                completeList += "2️⃣ - \(input)\n"
+                moveListForward()
+            case 3:
+                completeList += "3️⃣ - \(input)\n"
+                moveListForward()
+            case 4:
+                completeList += "4️⃣ - \(input)\n"
+                moveListForward()
+            case 5:
+                completeList += "5️⃣ - \(input)\n"
+                moveListForward()
+            case 6:
+                completeList += "6️⃣ - \(input)\n"
+                moveListForward()
+            case 7:
+                completeList += "7️⃣ - \(input)\n"
+                moveListForward()
+            case 8:
+                completeList += "8️⃣ - \(input)\n"
+                moveListForward()
+            case 9:
+                completeList += "9️⃣ - \(input)\n"
+                moveListForward()
+            case 10:
+                completeList += "🔟 - \(input)\n"
+                moveListForward()
+            default:
+                completeList += "♾️ - \(input)\n"
+                moveListForward()
+        }
         }
     }
     
@@ -36,6 +75,7 @@ class ViewController: UIViewController {
         itemsController.resetItems()
         label.text = ""
         completeList = ""
+        listCount = 1
     }
     
     
