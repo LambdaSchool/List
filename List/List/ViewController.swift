@@ -21,17 +21,17 @@ class ViewController: UIViewController {
     
     @IBAction func shouldAdd(_ sender: Any) {
         guard let text = textField?.text, !text.isEmpty else { return }
-        ItemsController.test.add(text)
+        ItemsController.shared.add(text)
         updateViews()
     }
     
     @IBAction func shouldReset(_ sender: Any) {
-        ItemsController.test.resetItems()
+        ItemsController.shared.resetItems()
         updateViews()
     }
     
     func updateViews() {
-        label.text = ItemsController.test.items.joined(separator: "\n")
+        label.text = ItemsController.shared.items.joined(separator: "\n")
     }
     
 //    let itemsController = ItemsController()

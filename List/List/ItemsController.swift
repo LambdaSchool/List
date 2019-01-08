@@ -9,9 +9,8 @@
 import Foundation
 
 class ItemsController {
-    static let test = ItemsController()
-    private init() {}
-    
+    static let shared = ItemsController()
+
     var items: [String] = []
     
     func add(_ item: String) {
