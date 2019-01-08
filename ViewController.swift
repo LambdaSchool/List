@@ -31,5 +31,8 @@ class ViewController: UIViewController {
         label.text = ""
     }
     
+    @IBAction func shouldPrint(_ sender: Any) {
+        print(Model.shared.items.joined(separator: ", "))
+    }
 }
 
