@@ -15,6 +15,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBOutlet weak var textField: UITextField!
+    
+    @IBOutlet weak var label: UILabel!
+    
+    @IBAction func shouldAdd(_ sender: Any) {
+        
+    }
+    
+    @IBAction func shouldReset(_ sender: Any) {
+        
+    }
+    
 }
 
