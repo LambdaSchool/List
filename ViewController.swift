@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var listView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +21,15 @@ class ViewController: UIViewController {
         let text = textField.text ?? ""
         if !text.isEmpty {
             Model.shared.add("\(bulletPoint)" + " " + text)
-            textField.text = ""
+            listView.text = ""
             let joined = Model.shared.items.joined(separator: "\n")
-            label.text = joined
+            listView.text = joined
         }
     }
     
     @IBAction func shouldReset(_ sender: Any) {
         Model.shared.resetItems()
-        label.text = ""
+        listView.text = ""
     }
     
     @IBAction func shouldPrint(_ sender: Any) {
