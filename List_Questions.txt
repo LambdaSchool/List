@@ -1,0 +1,21 @@
+Jocelyn Stuart	
+
+	•	What is Interface Builder's object library?
+
+The object library contains options/a library of features or interface elements you can add to your view controllers.
+
+	•	What is the difference between an outlet and an action?
+
+The difference between an outlet and an action is that, an outlet is a direct reference to an element of the storyboard, while actions are functions that get triggered by a tap or some event on a storyboard element.
+
+	•	What is the role of a View Controller?
+
+A view controller is the in-between between the views that display elements or accept input, and the data (models) of the project/app. View Controller manage the flow of data in applications by passing information between models and views.
+
+	•	What is Model-View-Controller?
+
+Model-View-Controller is a design pattern/architecture used in iOS development.
+
+	•	Why use Model-View-Controller?
+
+We use MVC to structure/organize code in a manner that promotes scalability and reusability 
