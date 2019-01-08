@@ -14,4 +14,15 @@ class Model {
     private init() {}
     
     private(set) var items: [String] = []
+    
+    func addItem(_ item: String) {
+        items.append(item)
+        
+    }
+    
+    func resetItems() {
+        items.removeAll()
+    }
+    
+    
 }
