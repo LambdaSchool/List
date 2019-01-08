@@ -9,6 +9,6 @@
 import Foundation
 
 //Using a struct because we have one value that doesn't need to be changed or updated later in this program.
-struct List {
+struct Item {
     var word: String
 }
