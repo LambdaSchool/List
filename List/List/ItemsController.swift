@@ -9,6 +9,9 @@
 import Foundation
 
 class ItemsController {
+    static let test = ItemsController()
+    private init() {}
+    
     var items: [String] = []
     
     func add(_ item: String) {
