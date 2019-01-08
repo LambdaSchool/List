@@ -13,7 +13,6 @@
 		4B8B411D21E52D0900BA89B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B411C21E52D0900BA89B3 /* Assets.xcassets */; };
 		4B8B412021E52D0900BA89B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B411E21E52D0900BA89B3 /* LaunchScreen.storyboard */; };
 		4B8B412821E52E1000BA89B3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B412721E52E1000BA89B3 /* Model.swift */; };
-		4B8B412A21E52E4A00BA89B3 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B412921E52E4A00BA89B3 /* ModelController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		4B8B411F21E52D0900BA89B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B8B412121E52D0900BA89B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B8B412721E52E1000BA89B3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		4B8B412921E52E4A00BA89B3 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 				4B8B411521E52D0800BA89B3 /* AppDelegate.swift */,
 				4B8B411721E52D0800BA89B3 /* ViewController.swift */,
 				4B8B412721E52E1000BA89B3 /* Model.swift */,
-				4B8B412921E52E4A00BA89B3 /* ModelController.swift */,
 				4B8B411921E52D0800BA89B3 /* Main.storyboard */,
 				4B8B411C21E52D0900BA89B3 /* Assets.xcassets */,
 				4B8B411E21E52D0900BA89B3 /* LaunchScreen.storyboard */,
@@ -142,7 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B8B412821E52E1000BA89B3 /* Model.swift in Sources */,
-				4B8B412A21E52E4A00BA89B3 /* ModelController.swift in Sources */,
 				4B8B411821E52D0800BA89B3 /* ViewController.swift in Sources */,
 				4B8B411621E52D0800BA89B3 /* AppDelegate.swift in Sources */,
 			);

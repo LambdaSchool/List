@@ -11,15 +11,15 @@ class ViewController: UIViewController {
     
     @IBAction func shouldAdd(_ sender: Any) {
         let text = textField.text ?? ""
-        
-        if !text.isEmpty {
-            
-        }
+        guard !text.isEmpty else { return }
+        Model.shared.add("∙ \(text)")
+        textField.text = ""
+        let updatedLabel = Model.shared.items.joined(separator: "\n")
+        label.text = updatedLabel
     }
     
     @IBAction func shouldReset(_ sender: Any) {
-        resetItems()
-        
+        Model.shared.resetItems()
         label.text = ""
     }
     
