@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     
-    var itemsArray: [Item] = []
+   let bullets = "\u{2022}"
    
     var itemsController = ItemsController()
     
@@ -30,9 +30,13 @@ class ViewController: UIViewController {
     
     func add(_ item: String) {
         // add the item to your items list
-       itemsController.items.append(item)
+       itemsController.items.append(bullets + " " + item)
+       
   
        let joined = itemsController.items.joined(separator: "\n")
+        
+        
+        
         label.text = joined
     
     }
