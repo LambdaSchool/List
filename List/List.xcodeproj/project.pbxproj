@@ -14,6 +14,7 @@
 		BB35DC0621E53AF700451FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB35DC0421E53AF700451FF1 /* LaunchScreen.storyboard */; };
 		BB35DC0E21E53B3A00451FF1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB35DC0D21E53B3A00451FF1 /* Item.swift */; };
 		BB35DC1021E53B6600451FF1 /* ItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB35DC0F21E53B6600451FF1 /* ItemsController.swift */; };
+		BB35DC1221E551AB00451FF1 /* List_Questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB35DC1121E551AB00451FF1 /* List_Questions.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BB35DC0721E53AF700451FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB35DC0D21E53B3A00451FF1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BB35DC0F21E53B6600451FF1 /* ItemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsController.swift; sourceTree = "<group>"; };
+		BB35DC1121E551AB00451FF1 /* List_Questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = List_Questions.txt; path = ../../../List_Questions.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		BB35DBFA21E53AF400451FF1 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				BB35DC1121E551AB00451FF1 /* List_Questions.txt */,
 				BB35DBFB21E53AF400451FF1 /* AppDelegate.swift */,
 				BB35DBFD21E53AF400451FF1 /* ViewController.swift */,
 				BB35DC0D21E53B3A00451FF1 /* Item.swift */,
@@ -130,6 +133,7 @@
 			files = (
 				BB35DC0621E53AF700451FF1 /* LaunchScreen.storyboard in Resources */,
 				BB35DC0321E53AF700451FF1 /* Assets.xcassets in Resources */,
+				BB35DC1221E551AB00451FF1 /* List_Questions.txt in Resources */,
 				BB35DC0121E53AF400451FF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
