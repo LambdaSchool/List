@@ -10,10 +10,14 @@ import Foundation
 
 
 class ItemsController {
-    var items: [String] = []
     
-    func add(_ item: String) {
+    var items: [Item] = []
+    
+    func add(_ item: Item) {
         // add the item to your items list
+        
+        items.append(item)
+        
     }
     
     func resetItems() {

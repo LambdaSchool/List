@@ -33,15 +33,23 @@ class ViewController: UIViewController {
         let text = textField.text ?? ""
         
         if !text.isEmpty {
-            itemsController.items.append(text)
+            
             textField.text = nil
             
+            let newText = Item.init(name: text)
             
-            let joined = itemsController.items.joined(separator: "\n")
+            itemsController.add(newText)
             
-            label.text = joined
+            
             
             print(itemsController.items)
+            
+            
+//            let joined = itemsController.items.joined(separator: "\n")
+            
+//            label.text = joined
+            
+            
         }
         
         
@@ -52,8 +60,14 @@ class ViewController: UIViewController {
         itemsController.resetItems()
         eraseLabel()
         print(itemsController.items)
+        
     }
     
+    @IBAction func printList(_ sender: UIButton) {
+        
+        
+        
+    }
     
     
 }
