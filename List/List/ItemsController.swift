@@ -1,15 +1,17 @@
 import Foundation
 
 class ItemsController {
+    static let shared = ItemsController()
+    private init() {}
     var items: [String] = []
     
     func add(_ item: String) {
-        return items.append(item)
+        items.append(item)
     }
     
     func resetItems() {
         // reset your items list here
-       return items.reset
+       return items.removeAll()
     }
 }
 
