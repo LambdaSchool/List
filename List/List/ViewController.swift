@@ -20,10 +20,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = nil
+        eraseLabel()
         
     }
     
+    func eraseLabel() {
+        label.text = nil
+    }
     
     @IBAction func shouldAdd(_ sender: UIButton) {
         
@@ -33,8 +36,12 @@ class ViewController: UIViewController {
             itemsController.items.append(text)
             textField.text = nil
             
+            
             let joined = itemsController.items.joined(separator: "\n")
             
+            label.text = joined
+            
+            print(itemsController.items)
         }
         
         
@@ -43,8 +50,8 @@ class ViewController: UIViewController {
     @IBAction func shouldReset(_ sender: UIButton) {
         
         itemsController.resetItems()
-        label.text = nil
-        
+        eraseLabel()
+        print(itemsController.items)
     }
     
     
