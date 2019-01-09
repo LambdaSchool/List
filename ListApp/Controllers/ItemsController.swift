@@ -10,10 +10,11 @@ import Foundation
 
 class ItemsController {
     var items = [String]()
+    let bullets = "\u{2022}"
     
     func add(_ item: String) {
         // add the item to your items list
-       items.append(item)
+       items.append(bullets + " " + item)
         
     }
     

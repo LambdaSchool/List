@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     
-   let bullets = "\u{2022}"
+   
    
     var itemsController = ItemsController()
     
