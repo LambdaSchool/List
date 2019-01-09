@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func printList(_ sender: Any) {
-        print(updatedTextView)
+        print(Model.shared.items)
     }
     
 
