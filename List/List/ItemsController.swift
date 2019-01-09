@@ -11,5 +11,17 @@ import Foundation
 
 class ItemsController {
     var items: [String] = []
+    
+    func add(_ item: String) {
+        // add the item to your items list
+    }
+    
+    func resetItems() {
+        // reset your items list here
+        
+        items.removeAll()
+        
+    }
+    
 }
 

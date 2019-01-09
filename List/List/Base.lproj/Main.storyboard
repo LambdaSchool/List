@@ -33,10 +33,13 @@
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hV-Nt-fW5">
                                                 <rect key="frame" x="329" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="Add"/>
+                                                <connections>
+                                                    <action selector="shouldAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ugx-g4-L1m"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvg-CT-Bkx">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvg-CT-Bkx">
                                         <rect key="frame" x="0.0" y="38" width="359" height="555"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -45,6 +48,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3U9-x1-paX">
                                         <rect key="frame" x="0.0" y="601" width="359" height="30"/>
                                         <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="shouldReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSw-os-MTf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -58,10 +64,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="kvg-CT-Bkx" id="rpw-tg-gHb"/>
+                        <outlet property="textField" destination="x0g-nB-gaE" id="qPn-l7-6AM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-238" y="125"/>
         </scene>
     </scenes>
 </document>
