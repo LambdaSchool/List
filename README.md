@@ -57,7 +57,7 @@ class ItemsController {
 - Add a method to add a new item to your list. You must complete this method so it adds a new item.
 
 ```
-func add(_ item: Item) {
+func add(_ name: String) {
     // add the item to your items list
 }
 ```
