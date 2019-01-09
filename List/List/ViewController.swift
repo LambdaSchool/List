@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     
     var itemsController = ItemsController()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,24 +29,23 @@ class ViewController: UIViewController {
     
     @IBAction func shouldAdd(_ sender: UIButton) {
         
-        let text = textField.text ?? ""
+        var text = textField.text ?? ""
         
         if !text.isEmpty {
             
+            if text.last != "." {
+                text.append(".")
+            }
+            
             textField.text = nil
             
-            let newText = Item.init(name: text)
-            
-            itemsController.add(newText)
-            
-            
-            
-            print(itemsController.items)
+            itemsController.add(text)
+            let joined = itemsController.items.joined(separator: ".\n")
+            label.text = joined
             
             
-//            let joined = itemsController.items.joined(separator: "\n")
             
-//            label.text = joined
+            
             
             
         }
@@ -59,13 +57,16 @@ class ViewController: UIViewController {
         
         itemsController.resetItems()
         eraseLabel()
-        print(itemsController.items)
         
     }
     
     @IBAction func printList(_ sender: UIButton) {
         
-        
+        if itemsController.items.isEmpty {
+            print("The items are empty")
+        } else {
+            print("The items are \(itemsController.items)")
+        }
         
     }
     
