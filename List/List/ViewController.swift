@@ -17,10 +17,16 @@ class ViewController: UIViewController {
         label.text = nil
     }
     
+    @IBAction func debugPrint(_ sender: Any) {
+        print(ItemsController.shared.items)
+    }
+    
+    
     private func updateViews() {
     let joined = ItemsController.shared.items.joined(separator: "\n")
     label.text = joined
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
