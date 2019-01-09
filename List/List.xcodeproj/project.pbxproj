@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		776C031A21E58ABC00A85378 /* List-Test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 776C031921E58ABC00A85378 /* List-Test.txt */; };
 		7794FA9521E53E8900671BEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794FA9421E53E8900671BEC /* AppDelegate.swift */; };
 		7794FA9721E53E8900671BEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794FA9621E53E8900671BEC /* ViewController.swift */; };
 		7794FA9A21E53E8900671BEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7794FA9821E53E8900671BEC /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		776C031921E58ABC00A85378 /* List-Test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "List-Test.txt"; sourceTree = "<group>"; };
 		7794FA9121E53E8900671BEC /* List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = List.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7794FA9421E53E8900671BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7794FA9621E53E8900671BEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 			children = (
 				7794FA9321E53E8900671BEC /* List */,
 				7794FA9221E53E8900671BEC /* Products */,
+				776C031921E58ABC00A85378 /* List-Test.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +133,7 @@
 			files = (
 				7794FA9F21E53E8900671BEC /* LaunchScreen.storyboard in Resources */,
 				7794FA9C21E53E8900671BEC /* Assets.xcassets in Resources */,
+				776C031A21E58ABC00A85378 /* List-Test.txt in Resources */,
 				7794FA9A21E53E8900671BEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
