@@ -48,7 +48,7 @@ struct Item {
 
 ```
 class ItemsController {
-    var items: [String] = []
+    var items: [Item] = []
 }
 ```
 
@@ -57,7 +57,7 @@ class ItemsController {
 - Add a method to add a new item to your list. You must complete this method so it adds a new item.
 
 ```
-func add(_ item: String) {
+func add(_ name: String) {
     // add the item to your items list
 }
 ```
@@ -104,7 +104,7 @@ Follow these steps to hook up your interface to your ViewController implementati
 - Implement shouldReset by calling your model's `resetItems()` method and then set the label text to `""`.
 - In `shouldAdd`, use nil-coalescing to retrieve text from the text field: `let text = textField.text ?? ""`.
 - If the text is not empty (`!text.isEmpty`), add it to your model. Then set the textField text to `""`. (Why do you do this? Try to think it through and test it both ways.)
-- Use a `joined` method to convert your model's list to a string: `let joined = Model.shared.items.joined(separator: "\n")`
+- Use a `joined` method to convert your model's list to a string: `let joined = itemController.items.joined(separator: "\n")`
 
 ## Minimum Viable Product
 
