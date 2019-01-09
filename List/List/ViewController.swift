@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var label: UILabel!
     
@@ -40,16 +39,10 @@ class ViewController: UIViewController {
             textField.text = nil
             
             itemsController.add(text)
-            let joined = itemsController.items.joined(separator: ".\n")
+            let joined = itemsController.items.joined(separator: "\n")
             label.text = joined
             
-            
-            
-            
-            
-            
         }
-        
         
     }
     
