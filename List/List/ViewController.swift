@@ -6,7 +6,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     @IBAction func shouldAdd(_ sender: Any) {
-        guard let text = textField.text, !text.isEmpty else { return }
+        //guard let text = textField.text, !text.isEmpty else { return }
+        let text = textField.text ?? ""
         ItemsController.shared.add(text)
         updateViews()
         textField.text = nil
