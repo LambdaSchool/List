@@ -12,30 +12,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        resetItems()
-    }
-    
-    func add(_ item: String) {
-        itemsController.items.append(item)
-        let joined = itemsController.items.joined(separator: "\n")
-        textView.text = joined
-    }
-    
-    func resetItems() {
-        textView.text = ""
-        itemsController.items.removeAll()
+        itemsController.resetItems()
     }
     
     @IBAction func shouldAdd(_ sender: UIButton) {
         let text = textField.text ?? ""
         if !text.isEmpty {
-            add("\u{2022} \(text)")
+            itemsController.add("\u{2022} \(text)")
         }
+        textView.text = itemsController.items.joined(separator: "\n")
         textField.text = ""
     }
     
     @IBAction func shouldReset(_ sender: UIButton) {
-        resetItems()
+        itemsController.resetItems()
+        textView.text = ""
     }
     
     @IBAction func shouldPrintList(_ sender: UIButton) {
