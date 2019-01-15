@@ -20,8 +20,7 @@ class ItemController {
     }
 
     func remove(_ item: Item) {
-        guard let index = items.index(of: item) else { return }
-        items.remove(at: index)
+     items.removeAll()
     }
 
 }
