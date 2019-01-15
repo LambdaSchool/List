@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  ItemList
+//  DianteList
 //
-//  Created by Diante Lewis-Jolley on 1/8/19.
+//  Created by Diante Lewis-Jolley on 1/15/19.
 //  Copyright © 2019 Diante Lewis-Jolley. All rights reserved.
 //
 
