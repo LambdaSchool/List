@@ -1,0 +1,10 @@
+The Interface Builder's object library is a library of objects used only for the view. Like models, they are apart from everything else and are general-purpose tools that Apple has provided for use in any type of application.
+
+An outlet is an instance of an object from the Interface Builder's library. An action is a function that is activated when the user interacts with the specific object that the function is tied to.
+
+A view control controls the view. It tells the view how to look, what to do and how to respond to user interaction.
+
+The MVC is the design patter used by Apple. In other words, it is the collection of best practices and ways of creating design and modeling your problems that is used by Apple with their products to create code that is maintainable and strong and that has resistance against bad things happening. 
+
+We use MVC because of what is stated in the above answer. It allows us to create code that is maintainable and strong.
+
